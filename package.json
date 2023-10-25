@@ -11,6 +11,7 @@
     "build:ts": "tsc -w",
     "test": "jest --watchAll ",
     "test:prod": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
+    "test:pro": "jest --watchAll --coverage  --passWithNoTests",
     "test:coverage": "jest --watchAll --coverage",
     "prepare": "husky install",
     "sass": "sass scss:css -w --no-source-map"
