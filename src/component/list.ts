@@ -22,8 +22,8 @@ export const list = (pets: Pet) => {
   return template;
 };
 
-export const renderList = (parentElement: HTMLElement) => {
-  let htmlElement = `<ul class"pet-list">`;
+export const renderList = (parentElement: HTMLElement, listedPets: Pet[]) => {
+  let htmlElement = `<ul class="pet-list">`;
   htmlElement += listedPets.map((pet) => list(pet));
   htmlElement += `</ul>`;
   parentElement.innerHTML += htmlElement;
